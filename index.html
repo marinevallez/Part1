@@ -17,7 +17,12 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script> function changeImage(name){
 					var img = document.getElementById("image");
-					img.src='images/'+name;
+					img.src='images_part1/'+name;
+					return false;
+					}</script>
+		<script> function changeImage1(name){
+					var img = document.getElementById("image1");
+					img.src='images_part1/'+name;
 					return false;
 					}</script>
 		<style>.image {display: inline-block;}</style>
@@ -25,20 +30,7 @@
 	  </head>
 	  <body>
 	    <div class="container">
-		
-	      <div class="jumbotron">
-	        <div class="row">
-	          <div class="col-sm-12">
-	            
-				<div style="display: flex; justify-content: center;">
-	              <img src="images_part1/ada.png">
-	            </div>
-	            <h1 align="center">Name project</h1> 
-	            <p align="center">Setting up your own GitHub page from scratch (or migrating from an existing website) is pretty easy!</p>
-	          </div>
-	        </div>
-	      </div>
-	        
+		        
 	        
 	      <div class="jumbotron">
 	        <div class="row">
@@ -58,9 +50,9 @@
 			<p align="left">
 			
 			<div id="banner" style="overflow: hidden; display: inline-block;">
-					<img class="right" id="image" src="images/test.png"  height="49%" width="49%" />
+					<img class="right" id="image" src="images_part1/labels_France.png"  height="49%" width="49%" />
 					
-					<img class="right" id="image" src="images/test.png"  height="49%" width="49%" />
+					<img class="right" id="image1" src="images_part1/labels_United-states.png"  height="49%" width="49%" />
 					
 			</div>			
 			
@@ -70,10 +62,28 @@
 					<div id="menu">
 						<form method="post" action="traitement.php">
 						<p align="left">
-						<label for="pays">Dans quel pays habitez-vous ?</label><br />
+						<label for="pays">Choose the first country: </label><br />
 						<select name="pays" id="pays">
-						<option  <button id="clickme" onclick="changeImage('autriche.jpg');">Autriche</button>  </option>
-						<option  <button id="clickme" onclick="changeImage('italie.jpg');">Italie</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Australia.png');">Australia</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Austria.png');">Austria</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Belgium.png');">Belgium</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Canada.png');">Canada</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Czech-republic.png');">Czech-republic</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Denmark.png');">Denmark</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_France.png');">France</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Germany.png');">Germany</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Hungary.png');">Hungary</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Italy.png');">Italy</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Mexico.png');">Mexico</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Netherlands.png');">Netherlands</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Portugal.png');">Potugal</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Romania.png');">Romania</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Russia.png');">Russia</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Spain.png');">Spain</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Portugal.png');">Portugal</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_Sweden.png');">Sweden</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_United-kingdom.png');">United-kingdom</button>  </option>
+						<option  <button id="clickme" onclick="changeImage('labels_United-states.png');">United-states</button>  </option>
 		   
            
 						</select>
@@ -84,10 +94,28 @@
 					<div id="menu">
 						<form method="post" action="traitement.php">
 						<p align="right-side">
-						<label for="pays">Dans quel pays habitez-vous ?</label><br />
+						<label for="pays">Choose the second country: </label><br />
 						<select name="pays" id="pays">
-						<option  <button id="clickme" onclick="changeImage('autriche.jpg');">Autriche</button>  </option>
-						<option  <button id="clickme" onclick="changeImage('italie.jpg');">Italie</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Australia.png');">Australia</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Austria.png');">Austria</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Belgium.png');">Belgium</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Canada.png');">Canada</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Czech-republic.png');">Czech-republic</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Denmark.png');">Denmark</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_France.png');">France</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Germany.png');">Germany</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Hungary.png');">Hungary</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Italy.png');">Italy</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Mexico.png');">Mexico</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Netherlands.png');">Netherlands</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Portugal.png');">Potugal</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Romania.png');">Romania</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Russia.png');">Russia</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Spain.png');">Spain</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Portugal.png');">Portugal</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_Sweden.png');">Sweden</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_United-kingdom.png');">United-kingdom</button>  </option>
+						<option  <button id="clickme" onclick="changeImage1('labels_United-states.png');">United-states</button>  </option>
 		   
            
 						</select>
