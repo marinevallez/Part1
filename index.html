@@ -27,63 +27,80 @@
 		<script type="text/javascript">
 				function nouvelleImage1(url) {
  
-				document.getElementById("divImage").innerHTML = "<img src='"+url+"' alt='image' height='100%' width='100%'  />";
+				document.getElementById("divImage1").innerHTML = "<img src='"+url+"' alt='image' height='100%' width='100%'  />";
  
 				}
 		</script>
+		
+		
 
 	  </head>
 	  
 	  <body>
+	  
+		
+		
 		<div class="container">
 		<div class="jumbotron">
 	    <div class="row">
 	    <div class="col-sm-12">
 	            
-		<h1 align="left">Part 1 blabla ...</h1> 
+		<div align="middle"
+		<p><FONT face="Century Gothic" size="10"><b>Which countries have the healthiest alimentation ? </b></FONT>
 	    <p align="left">
 	    Aim of the part ...
-	    
+	    </div>
+		
 		</p>
 	    <hr>                 
 		</div>
 	    </div>
 	    </div>
 		
-		
-		
-		
 		<div>
-   <table style='margin-left: auto; margin-right: auto'>
-        <tr>
-           <td>
-              <div id="divImage">
+				<table style='margin-left: auto; margin-right: auto'>
+				<tr>
+				<td>
+			<div id="divImage">
 				<img src='images_part1/labels_United-states.png' alt='image' height='100%' width='100%' />
 			</div>
-           </td>
-           <td>
-              <div id="divImage1">
-				<img src='images_part1/labels_United-states.png' alt='image' height='100%' width='100%' />
+				</td>
+				<td>
+			<div id="divImage1">
+			<img src='images_part1/labels_United-states.png' alt='image' height='100%' width='100%' />
 			</div>
-           </td>
-        </tr>
-   </table>
-</div>
+				</td>
+				</tr>
+				</table>
+		</div>
+		
+		<p><FONT face="Century Gothic" size="4"><b>Choose the first contry: 
+		
+		<form>
+			<select onChange="nouvelleImage(this.value)">
+			<option value="images_part1/labels_France.png">France</option>
+			<option value="images_part1/labels_Italy.png">Italy</option>
+			</select>
+		</form>
+		
+		</b></FONT>
+		
+		
+		
+		
+		
+		
+		<h1 align="left"> blabla ...</h1>
+		<form>
+			<select onChange="nouvelleImage1(this.value)">
+			<option value="images_part1/labels_France.png">image avec lama</option>
+			<option value="images_part1/labels_Italy.png">image avec abeille</option>
+			</select>
+		</form>
 			 
 		<h1 align="left"> blabla ...</h1>
 		<p align="left">
 			
-		
- 
-<form>
-   <select onChange="nouvelleImage(this.value)">
-      <option value="images_part1/labels_France.png">image avec lama</option>
-      <option value="images_part1/labels_Italy.png">image avec abeille</option>
-   </select>
-</form>
-	  
-		
-		
 		
 	  </body>
 	</html>
